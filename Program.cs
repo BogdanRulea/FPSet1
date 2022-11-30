@@ -232,10 +232,10 @@ internal class Program
             return noNumereDivizibileInInterval(n, -b, -a);
     }
 
-    // numarul anilor bisecti inainte de un an dat TODO
+    // numarul anilor bisecti inainte de un an dat
     private static int noAniBisecti(int an)
     {
-        return an / 4 - an / 100 + an / 400;
+        return (an / 4) - (an / 100) + (an / 400);
     }
     private static int pb13()
     {
@@ -249,7 +249,7 @@ internal class Program
         }
 
 
-        return noAniBisecti(b) - noAniBisecti(a - 4);
+        return noAniBisecti(b) - noAniBisecti(a-1);
     }
     private static string pb14()
     {
